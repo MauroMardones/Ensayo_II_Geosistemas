@@ -1,0 +1,716 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames*,x11names*}{xcolor}
+%
+\documentclass[
+]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  filecolor=Maroon,
+  citecolor=Blue,
+  urlcolor=Blue,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead[\rightmark]{Ensayo I Geosistemas. M. Mardones. II Sem, 2021}
+\lfoot[\thepage]{}
+\rfoot[]{\thepage}
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newenvironment{cslreferences}%
+  {\setlength{\parindent}{0pt}%
+  \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces}%
+  {\par}
+
+\title{\includegraphics[width=4cm,height=\textheight]{logoUMAG.jpg}}
+\author{}
+\date{\vspace{-2.5em}}
+
+\begin{document}
+\maketitle
+
+
+\pagenumbering{gobble}
+
+%\begin{titlepage}
+\begin{flushleft}
+\Large{\textbf{Ensayo Científico I}}\\
+\vspace*{2\baselineskip}
+\LARGE{\textbf{Fenómenos atmosféricos regionales y sinópticos y su influencia en la formación hielo marino en la Península Antártica}}\\
+\vspace*{3\baselineskip}
+\Large{Curso GeoSistemas}\\
+\vspace*{1\baselineskip}
+\Large{Semestre-2 2021 }\\
+\vspace*{3\baselineskip}
+\end{flushleft}
+\begin{flushright}
+\large{\textbf{Mauricio Mardones Inostroza}}\\
+\large{\textbf{Biólogo Marino}}\\
+\vspace*{2\baselineskip}
+\normalsize{Alumno Programa de Doctorado Ciencias Antárticas y Sub-Antárticas}\\
+\vspace*{1\baselineskip}
+\normalsize{Universidad de Magallanes, Chile}\\
+\vspace*{1\baselineskip}
+\normalsize{\textbf{Profesores}}\\
+Dr. Ricardo De Pol-Holz\\
+\vspace*{1\baselineskip}
+\normalsize{\textbf{Fecha}}\\
+Noviembre, 2021
+\end{flushright}
+
+% \end{titlepage}
+
+
+\hypersetup{linkcolor = black}
+\newpage
+\pagenumbering{roman}
+%\tableofcontents
+%\addcontentsline{toc}{section}{\contentsname}
+
+\newpage
+
+
+
+\pagenumbering{arabic}
+\hypersetup{linkcolor = blue}
+
+\fontsize{12}{26}
+\selectfont{}
+
+\hypertarget{introduccion}{%
+\subsection{1. INTRODUCCION}\label{introduccion}}
+
+La Antartica y el Océano Austral (OA) que lo circunda son componentes
+activos del clima global. Estos dos elementos también son profundamente
+influenciados por las muchas variabilidades atmosféricas remotas y
+regionales en períodos que van desde escalas de tiempo sinópticas a
+geológicas (Yuan, \protect\hyperlink{ref-Yuan2004}{2004}). En este
+sentido, la Antártica y el Oceáno Austral asociado han jugado un rol
+fundamental para entender la dinámica de muchos forzantes ambientales,
+entre ellos, el hielo marino, y su variabilidad asociada a los distintos
+fenómenos atmosféricos que influyen en estos procesos. Este ensayo tiene
+como finalidad identificar y describir las particularidades de los
+principales fenómenos atmosféricos y como estos influyen en la
+formación, expansión y contracción de hielo Antártico. A su vez daremos
+una mirada historica y también como el Cambio Climático (CC) genera
+desacoples en estos fenómenos atmosféricos, y con ello, sus implicancias
+en la dinámica propia del hielo marino Antártico. Todo esto con un foco
+en particular en la Península Antártica (PA). Por último, trataremos de
+entender como el hielo marino y su ciclos se correlacionan con la
+dinámica de las poblaciones marinas del krill (\emph{Euphausia
+superba}), las cuales son la base de los ecosistemas marinos en el
+Océano Austral.
+
+\pagebreak
+
+\hypertarget{desarrollo}{%
+\subsection{2. DESARROLLO}\label{desarrollo}}
+
+La superficie del océano alrededor de la Antártica se congela en
+invierno y se derrite cada verano. El hielo marino antártico
+generalmente alcanza su extensión máxima anual a mediados o finales de
+septiembre, y alcanza su mínimo anual a finales de febrero o principios
+de marzo (Scott, \protect\hyperlink{ref-Scott2019}{2019}) (Figura 1). El
+hielo marino antártico se extiende a unos 12 millones de kilómetros
+cuadradas en invierno convirtiendola en un continente rodeado por un
+vasto océano lo cual tiene muchas implicancias en como aquí se
+manifiestan los procesos climáticos-atmosféricos.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{images/Fig4} 
+
+}
+
+\caption{Extensión del hielo Antártico y su fluctuación intra e interanual (ex. www.climate.gov)}\label{fig:unnamed-chunk-1}
+\end{figure}
+
+El hielo marino puede expandirse libremente a través del Océano Austral
+en invierno, pero no puede acercarse al Polo Sur de lo que la costa
+antártica lo permitirá. En promedio, alrededor del 15 por ciento de la
+cubierta de hielo invernal del Océano Austral, es por ello que la mayor
+parte del hielo marino de la Antártica tiene solo un invierno como
+máximo. Como resultado, el hielo marino antártico es relativamente
+delgado, a menudo de 1 metro o menos. Sin embargo, las nevadas a menudo
+espesan el hielo marino antártico. La pesada carga de nieve puede
+deprimir los témpanos de hielo, y el agua de mar puede inundar
+posteriormente esos témpanos (Scott,
+\protect\hyperlink{ref-Scott2019}{2019}).
+
+Con respecto al hielo continental, la elevación antártica promedia cerca
+de 2000 metros (más de 1000 mm. sobre el nivel del mar). Las partes más
+altas de la capa de hielo, cerca del centro de la Antártida Oriental,
+rivalizan con la altura de sus montañas más altas, a casi 4000 metros.
+Por todas estas características, este océano es una de los áreas más
+sensibles al CC. Los forzantes claves y su influencia en procesos claves
+dentro del OA ya han experimentado cambios en sus dinámicas naturales,
+entre ellos se pueden identificar; la temperatura del océano, la
+dinámica del hielo marino, la estratificación, las corrientes, entre
+otros (Morley et al., \protect\hyperlink{ref-Morley2020}{2020};
+Sylvester et al., \protect\hyperlink{ref-Sylvester2021}{2021}).
+
+En comparación con el Ártico, el continente Antártico está respondiendo
+con menos intensidad al cambio climático (Groh \& Horwath,
+\protect\hyperlink{ref-Groh2021}{2021}). En este sentido, el OA está
+amortiguando los impactos de vientos y patrones climáticos que tienden a
+aislarla de lo que podrían influir las entradas de aire cálido. Sin
+embargo, y en promedio, la Antártica se ha descongelado y ha perdido
+mucho hielo (Nicolas \& Bromwich,
+\protect\hyperlink{ref-Nicolas2014}{2014}), y esto puede tener
+implicancias futuras. El reporte del Grupo Intergubernamental de
+Expertos sobre el CC (IPCC por sus siglas en inglés) (IPCC,
+\protect\hyperlink{ref-IPCC2014}{2014}) encontró una tendencia al
+calentamiento en la Antártica, pero no a niveles concluyentes. Por otro
+lado, a finales del siglo XX, el agujero de ozono y sus efectos en la
+circulación del aire pueden haber protegido parcialmente al continente
+de la influencia del calentamiento global de las emisiones de gases de
+efecto invernadero (Damiani et al.,
+\protect\hyperlink{ref-Damiani2020}{2020}). Respecto a la influencia del
+clima sobre la dinámica del hielo marino en la PA, Massom et al.
+(\protect\hyperlink{ref-Massom2008}{2008}) identificaron una extrema
+fase de compactación de hielo frente a anomalías de temperatura, vientos
+y diferencias de presión atmosferica. La variabilidad y ciclos del hielo
+internanuales e históricos son influenciados por forzantes atmosfericos.
+Estos procesos estan profusamente descritas en la literatura (Carrasco,
+\protect\hyperlink{ref-Carrasco2018}{2018}; Damiani et al.,
+\protect\hyperlink{ref-Damiani2020}{2020}; Massom et al.,
+\protect\hyperlink{ref-Massom2008}{2008}; Mayewski et al.,
+\protect\hyperlink{ref-Mayewski2017}{2017}; Rohli \& Vega,
+\protect\hyperlink{ref-Rohli2018}{2018}; S. E. Stammerjohn et al.,
+\protect\hyperlink{ref-Stammerjohn2008}{2008}; Stammerjohn et al.,
+\protect\hyperlink{ref-Stammerjohn2008a}{2008}; Turner,
+\protect\hyperlink{ref-Turner2004}{2004}; Yuan,
+\protect\hyperlink{ref-Yuan2004}{2004}).
+
+Sin embargo, y al igual que otros continentes, la Antártica siente los
+impactos del CC a diferentes ritmos en diferentes lugares. En la
+Península Antártica, de menor elevación y con menor latitud, experimentó
+rápidos aumentos de temperatura durante varias décadas en el siglo XX.
+Luego, a finales de la década de 1990, los aumentos de temperatura se
+ralentizaron, y desde 2000, la Península se ha enfriado. Durante los
+últimos 40 años la PA ha sido una de las zonas más afectadas de la
+región en términos de cambios ambientales. Los más notables de estos
+tienen relación con un aumento de los vientos del oeste, un aire más
+alto y profundo temperaturas del océano, y reducciones en el hielo
+marino, tanto su extención y el tiempo de formación. Estudios del 2016 y
+2021 concluyeron que el reciente enfriamiento se puede explicar por la
+variabilidad natural y condiciones atmosféricas del Océano Pacífico. A
+pesar del reciente enfriamiento o \emph{hiatus} (Carrasco et al.,
+\protect\hyperlink{ref-Carrasco2021b}{2021}; Turner et al.,
+\protect\hyperlink{ref-Turner2016}{2016}), las partes septentrionales de
+la PA siguen siendo mucho más cálidas de lo que eran a mediados del
+siglo pasado (Nicolas \& Bromwich,
+\protect\hyperlink{ref-Nicolas2014}{2014}; Scott,
+\protect\hyperlink{ref-Scott2020}{2020}; Turner et al.,
+\protect\hyperlink{ref-Turner2005}{2005}) (Figura 2), considerando a la
+PA como una de las partes de la Tierra que ha experimentado un gran
+calentamiento los últimos 50 años, habiendo aumentado a una tasa de 0.56
+ºC década (1 durante el año y 1.09 ºC década) (Turner et al.,
+\protect\hyperlink{ref-Turner2005}{2005}).
+
+\pagebreak
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{images/Fig3} 
+
+}
+
+\caption{Tendencias de temperatura durante todo el año 1958 al 2012 por década en la Antártica (Ex. Nicolas y Bromwich, 2014}\label{fig:unnamed-chunk-2}
+\end{figure}
+
+En relación a variabilidad historica de la formación de hielo marino en
+el OA, es necesario entender como ha sido la producción en el pasado y
+ver como se están produciendo los cambios, tanto así en la actualidad
+como en el futuro por influencia y desajustes de las condiciones
+atmosféricas imperantes. En función de las características descritas
+previamente en relación a la dinámica del hielo marino en el continente
+Antártico, es necesario entender entonces cuales son los forzantes
+atmosféricos que influyen en ello. Un corolario de esto es la evidente
+demostración de forzantes globales que afectan a la dinámica del hielo
+en el Océano Austral y en particular en la Península Antártica, que se
+hacen sentir en el presente y también afectarán en el futuro.
+
+Con estos antecedentes comprender la dinamica del hielo marino en la PA
+y su relación con los fenómenos atmosfericos que influyen en ello es el
+objetivo de este ensayo. Las forzantes atmosférico-oceanográficos son
+los que se manifiestan por cambios producidos en la atmósfera y que
+tienen implicancias en el mar. Entre aquellos forzantes, los que han
+sido mas estudiados e identifcados como factores influyentes en
+componentes del OA, son el Southern Annular Mode (SAM) y El Niño
+Southern Oscillation (ENSO).
+
+\hypertarget{enso-y-su-influencia-en-el-hielo-marino-en-la-penuxednsula-antuxe1rtica}{%
+\subsection{2.1. ENSO y su influencia en el hielo marino en la Península
+Antártica}\label{enso-y-su-influencia-en-el-hielo-marino-en-la-penuxednsula-antuxe1rtica}}
+
+Un fenómeno oceanográfico-atmosférico que tiene implicancias en los
+océanos es la Oscilación del Sur El Niño, que en inglés es El Niño
+Southern Oscilation (de aquí en más ENSO, por sus siglas en inglés). El
+ENOS, que incluye su contraparte La Niña, es la variabilidad climática
+interanual más significativa que tiene lugar en el planeta. Ocurre en la
+cuenca ecuatorial del Océano Pacifico con alteraciones de presión
+atmosféricas, cuyos efectos se hacen sentir más allá de los trópicos, en
+diversos lugares alrededor del planeta, incluso en la Antártica
+(Carrasco, \protect\hyperlink{ref-Carrasco2018}{2018}; S. E. Stammerjohn
+et al., \protect\hyperlink{ref-Stammerjohn2008}{2008}), indicando una
+relación inversa entre las anomalías estaciónales de presión al nivel
+del mar en las latitudes polares y ENSO con desfase negativo de un año
+(Carrasco, \protect\hyperlink{ref-Carrasco2018}{2018}). Un evento ``El
+Niño'' consiste principalmente en un calentamiento por sobre lo normal
+de la superficie del Océano Pacífico ecuatorial central y oriental
+(mayor a 25ºC), acompañado por un aumento del nivel del mar (mayor a 15
+cm.). En cambio durante el fenómeno de El Niño los vientos alisios se
+debilitan o dejan de soplar, la máxima temperatura marina se desplaza
+hacia la Corriente de Perú que es relativamente fría y la mínima
+temperatura marina se desplaza hacia el Sureste Asiático. Esto provoca
+el aumento de la presión atmosférica en el sureste asiático y la
+disminución en América del Sur. Todo este cambio ocurre en un intervalo
+de seis meses, aproximadamente desde junio a noviembre.
+
+Luego de una revisión de la influencia de este forzante, Carrasco
+(\protect\hyperlink{ref-Carrasco2018}{2018}) indica que existe una
+relación entre la Oscilación del Sur (OS) y la concentración del hielo
+marino que rodea la Antártica, en particular en el sector del Mar de
+Weddell por medio del Dipolo Antártico (ADP), el cual es una
+variabilidad climática de latitudes altas en el sistema interactivo de
+la atmósfera-océano-hielo de fase opuesta entre el hielo marino y las
+anomalías de la temperatura superficial del mar en el Océano Pacífico
+Sur y el Océano Atlántico Sur, y que responde a la forzante del ENOS
+(Yuan, \protect\hyperlink{ref-Yuan2004}{2004}). Carrasco
+(\protect\hyperlink{ref-Carrasco2018}{2018}) analizó el comportamiento
+clímatico del sector norte de la PA durante los mayores eventos del ENSO
+(Figura 3) que sucedieron en los ultimos 50 años, y en donde concluyeron
+que existe un impacto de ENOS en la formación del hielo marino en la
+Antártida, en particular en el sector oeste de la PA, en el Mar de
+Bellingshausen y Amundsen. La formación y extensión hacia el norte del
+hielo marino puede verse frenada cuando prevalecen vientos del noroeste
+en el sector, situación que se da con eventos La Niña. Por el contrario,
+la formación y desplazamiento del hielo marino puede verse favorecido
+cuando la frecuencia de vientos del noroeste es baja y débil o incluso
+la circulación del viento sea del oeste y suroeste, situación que ocurre
+en los eventos El Niño. Así, una baja presión en el Mar de
+Bellingshausen asociado a El Niño puede favorecer un flujo con
+componente del sur (o flujo del noroeste menos frecuente y/o más
+débiles) en el sector del Mar de Bellingshausen y un flujo del sur más
+débil en el sector del Mar de Ross, favoreciendo y desfavoreciendo,
+respectivamente, la formación y extensión de hielo marino hacia el norte
+{[}Carrasco2021a{]}.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.8\linewidth]{images/Fig5} 
+
+}
+
+\caption{Comportamiento del Índice de Oscilación del Sur (IOS, eje izquierdo) junto a las anomalías de la concentración de hielo marino (CHM) en el sector norte del Mar de Bellingshausen. (Ex. Carrasco, 2018)}\label{fig:unnamed-chunk-3}
+\end{figure}
+
+\pagebreak
+
+\hypertarget{sam-y-su-influencia-en-el-hielo-marino-en-la-penuxednsula-antuxe1rtica}{%
+\subsection{2.2. SAM y su influencia en el hielo marino en la Península
+Antártica}\label{sam-y-su-influencia-en-el-hielo-marino-en-la-penuxednsula-antuxe1rtica}}
+
+La variabilidad de la circulación atmosférica estacional en el
+hemisferio sur está modulado por varios modos climáticos de variabilidad
+de la circulación atmosférica. Uno de los modos que dominan esta
+variabilidad es el llamado Modo Anular del SUR o Southern Annular Mode
+(de aquí en mas SAM, por sus siglas en inglés). En general, la
+variabilidad SAM se caracteriza por anomalías zonales simétricas de
+presión atmosférica de opuestos signo entre la Antártida y las latitudes
+medias. Varios estudios han explorado las posibles conexiones entre
+hielo marino del Océano Austral y SAM (Massom et al.,
+\protect\hyperlink{ref-Massom2008}{2008}; Nicolas \& Bromwich,
+\protect\hyperlink{ref-Nicolas2014}{2014}; S. E. Stammerjohn et al.,
+\protect\hyperlink{ref-Stammerjohn2008}{2008}). Por otro lado, el
+agotamiento del ozono influye directamente en el modo principal de
+variabilidad de la circulación atmosférica en las regiones
+extratropicales del sur. Se cree que la tendencia del verano (intensidad
+SAM +) se debe principalmente al agotamiento del ozono polar
+estratosférico (Damiani et al.,
+\protect\hyperlink{ref-Damiani2020}{2020}).
+
+Una forma de medir el SAM es a través de un índice calculado como el
+gradiente de presión entre las latitudes medias y la Antártida, que
+cuando es muy positivo, da como resultado vientos del oeste que son más
+fuertes que el promedio y se desplazan hacia el polo. Desde 1957 ha
+habido un aumento significativo de la fase SAM positivo en el verano y
+otoño austral. La variabilidad del SAM tiene un impacto significativo en
+la temperatura de la superficie antártica, la precipitación y el hielo
+marino (Marshall et al., \protect\hyperlink{ref-Marshall2017}{2017}).
+
+\pagebreak
+
+Al mismo tiempo, la variabilidad del hielo marino observada en las
+últimas dos décadas de observaciones satelitales muestran disminuciones
+en concentración y duración en el oeste de la Península Antártica
+(Newman et al., \protect\hyperlink{ref-Newman2016}{2016}). Estudios
+previos han demostrado que la duración y la concentración mensual del
+hielo marino Antártico han disminuido fuertemente en la región oeste de
+la PA. Estas observaciones sugieren que las tendencias del hielo marino
+en la región oeste de la PA son principalmente reflejando los cambios en
+las interacciones hielo-atmósfera que ocurren durante la primavera-otoño
+durante la retirada del hielo marino y la posterior avance por efectos
+de las fases y duraciones del SAM (Figura 4) (S. E. Stammerjohn et al.,
+\protect\hyperlink{ref-Stammerjohn2008}{2008}; Stammerjohn et al.,
+\protect\hyperlink{ref-Stammerjohn2008a}{2008}).
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.6\linewidth]{images/Fig6} 
+
+}
+
+\caption{Representación esquemática de la respuesta de hielo en latitudes altas por efecto de la fase SAM + (Ex. Stammerjohn et al. 2008)}\label{fig:unnamed-chunk-4}
+\end{figure}
+
+Finalmente es necesario también señalar que ambos fenomenos
+atmosfericos, es decir, el Southern Annular Mode (SAM) y El Niño
+Southern Oscillation (ENSO) están interanctuando constantemente y tienen
+efectos combinados sobre la criósfera. En este sentido existen estudios
+recientes que han examinado los impactos combinados de ENSO y SAM en la
+respuesta de alta latitud tanto de la circulación atmosférica y hielo
+marino (S. E. Stammerjohn et al.,
+\protect\hyperlink{ref-Stammerjohn2008}{2008}; Stammerjohn et al.,
+\protect\hyperlink{ref-Stammerjohn2008a}{2008}).
+
+Respecto a antecedentes históricos de la dinámica del hielo marino en la
+PA y sus condicionantes atmosféricas, Vorrath et al.
+(\protect\hyperlink{ref-Vorrath2020}{2020}) analizaron imágenes
+satelitales del hielo marino durante los últimos 40 años y observaron
+diiferencias entre las estimaciones del hielo marino basadas en
+biomarcadores, el salida del modelo de los últimos 240 años, registros
+de núcleos de hielo y reconstruidos patrones de circulación atmosférica
+como el Niño -- Oscilación del Sur (ENSO) y Anular del Sur Modo (SAM)
+(Figura 5). En este trabajo identificaron los distintos patrones
+atmosféricos y los efectos diferenciados sobre la formación de hielo en
+la PA. Estos hallazgos tienen implicancias importantes frente a
+escenarios climáticos futuros y su impacto en este importante compomente
+de la criósfera.
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{images/Fig7} 
+
+}
+
+\caption{Ilustración de momentos historicos y los impulsores ambientales en la formación de hielo en la PA (Ex. Vorrath et al. 2020)}\label{fig:unnamed-chunk-5}
+\end{figure}
+
+\pagebreak
+
+Los fenómenos atmosféricos y su conectividad con la dinámica del hielo
+marino en la Península Antártica no solo tiene implicancias en
+regulaciones climáticas si no también en el ecosistema del OA asociado.
+Existen contundentes demostraciones del estrecho vínculo entre los
+ciclos de formación de hielo marino antártico y la dinámica de las
+poblaciones de krill, en particular en períodos de reproducción y
+crecimiento (H. Flores et al., \protect\hyperlink{ref-Flores2012}{2012};
+Hauke Flores et al., \protect\hyperlink{ref-Flores2012a}{2012}; Piñones,
+\protect\hyperlink{ref-ILAIA2021}{2021}; Piñones \& Fedorov,
+\protect\hyperlink{ref-Pinones2016}{2016}; Walsh et al.,
+\protect\hyperlink{ref-Walsh2020}{2020}). En este sentido, el krill
+depende de las condiciones ambientales de temperatura, clorofila pero
+por sobre todo del hielo marino para su supervivencia, ya que utiliza al
+hielo marino como refugio y este a su vez se convierte en una zona de
+retención del alimento, como lo indica la Figura 6.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.9\linewidth]{images/Fig10} 
+
+}
+
+\caption{Esquema del ciclo de vida del krill y su relación con la formación de hielo marino Antárico (Ex. Piñones y Fedorov, 2016)}\label{fig:unnamed-chunk-6}
+\end{figure}
+
+Dado que durante las últimas cuatro décadas la PA ha sido una de las
+zonas más afectadas de la región en términos de cambios ambientales. Los
+más notables de estos generan un aumento de los vientos del oeste, un
+aire más alto y profundo temperaturas del océano, y esto se transfiere
+en reducciones en el hielo marino, tanto su extensión y el tiempo de
+formación. Desde el comienzo de los registros de hielo basados en
+satélites cubierta (década de 1980) se ha observado que la formación de
+hielo ahora ocurre casi dos meses después que hace 30 años, y esto puede
+tener implicaciones para la supervivencia de las larvas de krill .Esta
+situación esta comenzando a preocupar a diversos investigadores y
+administradores por el futuro de esta importante población base del
+ecosistema antartico en términos de trama trófica asociada, pero tambien
+en su impacto en las pesquerías que explotan el recurso.
+
+\pagebreak
+
+\hypertarget{discusion}{%
+\subsection{3. DISCUSION}\label{discusion}}
+
+Como síntesis de lo anteriormente expuesto, existen fuertes evidencias
+de la interacción atmosfera-hielo marino y sus consecuencias comprobadas
+en el continente Atrártico y en particular en la PA, las cuales son
+consistentes con el rápido calentamiento de la región. Los cambios en la
+duración de la temporada de hielo se deben principalmente por cambios en
+el avance del hielo marino otoñal y en menor grado el retiro del hielo
+marino de primavera. Las mayores anomalías hacia un un retroceso algo
+más temprano y un avance mucho más tarde co-ocurren con fuertes vientos
+del norte durante La Niña y / o + SAM y una combinación de estos.
+
+Mas allá de lo técnico y complejo que es recabar conocimiento y
+entendimiento sobre como los fenómenos atmosféricos como el ENSO y el
+SAM se conectan con las distintas componentes de la tierra, y en
+particular con el continente antártico, este ensayo científico fue un
+paso inicial y un sustrato cognitivo para, en primer lugar, reconocer la
+importancia de estos fenómenos, como ellos se desencadenan y como
+actuan, y a su vez identificar las fuertes implicancias que ello tiene
+para otros procesos asociados, impactando tambien a los ecosistemas que
+componen a la biósfera.Es evidente que, si bien son fenómenos
+atmósfericos que estan en funcionamiento hace miles de años, cualquier
+forzante antropogénica puede modificar sus ciclos, dinamica temporal así
+como su magnitud y con ello generar desequilibrios indeterminados en los
+productivos pero frágiles ecosistemas asociados.
+
+\pagebreak
+
+\hypertarget{referencias}{%
+\subsection*{4. REFERENCIAS}\label{referencias}}
+\addcontentsline{toc}{subsection}{4. REFERENCIAS}
+
+\hypertarget{refs}{}
+\begin{cslreferences}
+\leavevmode\hypertarget{ref-Carrasco2018}{}%
+Carrasco, J. F. (2018). Señales atmosféricas y del hielo marino
+asociadas a ENOS en el sector norte de la península antártica.
+\emph{Anales Del Instituto de La Patagonia}, \emph{46}(1), 33--47.
+\url{https://doi.org/10.4067/s0718-686x2018000100033}
+
+\leavevmode\hypertarget{ref-Carrasco2021b}{}%
+Carrasco, J. F., Bozkurt, D., \& Cordero, R. R. (2021). A review of the
+observed air temperature in the Antarctic Peninsula. Did the warming
+trend come back after the early 21st hiatus? \emph{Polar Science},
+\emph{28}(February), 100653.
+\url{https://doi.org/10.1016/j.polar.2021.100653}
+
+\leavevmode\hypertarget{ref-Damiani2020}{}%
+Damiani, A., Cordero, R. R., Llanillo, P. J., Feron, S., Boisier, J. P.,
+Garreaud, R., Rondanelli, R., Irie, H., \& Watanabe, S. (2020).
+Connection between antarctic ozone and climate: Interannual
+precipitation changes in the Southern Hemisphere. \emph{Atmosphere},
+\emph{11}(6), 1--19. \url{https://doi.org/10.3390/atmos11060579}
+
+\leavevmode\hypertarget{ref-Flores2012}{}%
+Flores, H., Atkinson, A., Kawaguchi, S., Krafft, B. A., Milinevsky, G.,
+Nicol, S., Reiss, C., Tarling, G. A., Werner, R., Bravo Rebolledo, E.,
+Cirelli, V., Cuzin-Roudy, J., Fielding, S., Groeneveld, J. J.,
+Haraldsson, M., Lombana, A., Marschoff, E., Meyer, B., Pakhomov, E. A.,
+\ldots{} Werner, T. (2012). Impact of climate change on Antarctic krill.
+\emph{Marine Ecology Progress Series}, \emph{458}, 1--19.
+\url{https://doi.org/10.3354/meps09831}
+
+\leavevmode\hypertarget{ref-Flores2012a}{}%
+Flores, H., Franeker, J. A. van, Siegel, V., Haraldsson, M., Strass, V.,
+Meesters, E. H., Bathmann, U., \& Wolff, W. J. (2012). The association
+of Antarctic krill Euphausia superba with the under-ice habitat.
+\emph{PLoS ONE}, \emph{7}(2).
+\url{https://doi.org/10.1371/journal.pone.0031775}
+
+\leavevmode\hypertarget{ref-Groh2021}{}%
+Groh, A., \& Horwath, M. (2021). Antarctic ice mass change products from
+GRACE/GRACE-fo using tailored sensitivity kernels. \emph{Remote
+Sensing}, \emph{13}(9). \url{https://doi.org/10.3390/rs13091736}
+
+\leavevmode\hypertarget{ref-IPCC2014}{}%
+IPCC. (2014). \emph{Climate Change 2014: Synthesis Report. Contribution}
+(p. 169).
+
+\leavevmode\hypertarget{ref-Marshall2017}{}%
+Marshall, G. J., Thompson, D. W. J., \& Broeke, M. R. (2017).
+Circulation Patterns in Antarctic Precipitation. \emph{Geophysical
+Research Letters RESEARCH RESEARCH}, \emph{44}, 11580--11589.
+
+\leavevmode\hypertarget{ref-Massom2008}{}%
+Massom, R. A., Stammerjohn, S. E., Lefebvre, W., Harangozo, S. A.,
+Adams, N., Scambos, T. A., Pook, M. J., \& Fowler, C. (2008). West
+Antarctic Peninsula sea ice in 2005: Extreme ice compaction and ice edge
+retreat due to strong anomaly with respect to climate. \emph{Journal of
+Geophysical Research: Oceans}, \emph{113}(2), 1--23.
+\url{https://doi.org/10.1029/2007JC004239}
+
+\leavevmode\hypertarget{ref-Mayewski2017}{}%
+Mayewski, P. A., Carleton, A. M., Birkel, S. D., Dixon, D., Kurbatov, A.
+V., Korotkikh, E., McConnell, J., Curran, M., Cole-Dai, J., Jiang, S.,
+Plummer, C., Vance, T., Maasch, K. A., Sneed, S. B., \& Handley, M.
+(2017). Ice core and climate reanalysis analogs to predict Antarctic and
+Southern Hemisphere climate changes. \emph{Quaternary Science Reviews},
+\emph{155}, 50--66.
+\url{https://doi.org/10.1016/j.quascirev.2016.11.017}
+
+\leavevmode\hypertarget{ref-Morley2020}{}%
+Morley, S. A., Abele, D., Barnes, D. K. A., Cárdenas, C. A., Cotté, C.,
+Gutt, J., Henley, S. F., Höfer, J., Hughes, K. A., Martin, S. M.,
+Moffat, C., Raphael, M., Stammerjohn, S. E., Suckling, C. C., Tulloch,
+V. J. D., Waller, C. L., \& Constable, A. J. (2020). Global Drivers on
+Southern Ocean Ecosystems: Changing Physical Environments and
+Anthropogenic Pressures in an Earth System. \emph{Frontiers in Marine
+Science}, \emph{7}(December), 1--24.
+\url{https://doi.org/10.3389/fmars.2020.547188}
+
+\leavevmode\hypertarget{ref-Newman2016}{}%
+Newman, M., Alexander, M. A., Ault, T. R., Cobb, K. M., Deser, C., Di
+Lorenzo, E., Mantua, N. J., Miller, A. J., Minobe, S., Nakamura, H.,
+Schneider, N., Vimont, D. J., Phillips, A. S., Scott, J. D., \& Smith,
+C. A. (2016). The Pacific decadal oscillation, revisited. \emph{Journal
+of Climate}, \emph{29}(12), 4399--4427.
+\url{https://doi.org/10.1175/JCLI-D-15-0508.1}
+
+\leavevmode\hypertarget{ref-Nicolas2014}{}%
+Nicolas, J. P., \& Bromwich, D. H. (2014). New reconstruction of
+antarctic near-surface temperatures: Multidecadal trends and reliability
+of global reanalyses. \emph{Journal of Climate}, \emph{27}(21),
+8070--8093. \url{https://doi.org/10.1175/JCLI-D-13-00733.1}
+
+\leavevmode\hypertarget{ref-ILAIA2021}{}%
+Piñones, A. (2021). ILAIA ADVANCES IN CHILE ANANTARTIC SCi ENcE
+n7--2021. \emph{Antartic Krill in a Time of Change}.
+
+\leavevmode\hypertarget{ref-Pinones2016}{}%
+Piñones, A., \& Fedorov, A. V. (2016). Projected changes of Antarctic
+krill habitat by the end of the 21st century. \emph{Geophysical Research
+Letters}, \emph{43}(16), 8580--8589.
+\url{https://doi.org/10.1002/2016GL069656}
+
+\leavevmode\hypertarget{ref-Rohli2018}{}%
+Rohli, R. V., \& Vega, A. J. (2018). General Circulation and Secondary
+Circulations. \emph{Climatology}, 131--154.
+
+\leavevmode\hypertarget{ref-Scott2019}{}%
+Scott, M. (2019). \emph{Antarctica is colder than the Arctic, but it's
+still losing ice}.
+\url{https://www.climate.gov/news-features/features/antarctica-colder-arctic-it's-still-losing-ice}
+
+\leavevmode\hypertarget{ref-Scott2020}{}%
+Scott, M. (2020). \emph{Understanding climate: Antarctic sea ice extent}
+{[}PhD thesis{]}.
+\url{https://www.climate.gov/news-features/understanding-climate/understanding-climate-antarctic-sea-ice-extent}
+
+\leavevmode\hypertarget{ref-Stammerjohn2008a}{}%
+Stammerjohn, S. E., Martinson, D. G., Smith, R. C., \& Iannuzzi, R. A.
+(2008). Sea ice in the western Antarctic Peninsula region:
+Spatio-temporal variability from ecological and climate change
+perspectives. \emph{Deep-Sea Research Part II: Topical Studies in
+Oceanography}, \emph{55}(18-19), 2041--2058.
+\url{https://doi.org/10.1016/j.dsr2.2008.04.026}
+
+\leavevmode\hypertarget{ref-Stammerjohn2008}{}%
+Stammerjohn, S. E., Martinson, D. G., Smith, R. C., Yuan, X., \& Rind,
+D. (2008). Trends in Antarctic annual sea ice retreat and advance and
+their relation to El Niño-Southern Oscillation and Southern Annular Mode
+variability. \emph{Journal of Geophysical Research: Oceans},
+\emph{113}(3), 1--20. \url{https://doi.org/10.1029/2007jc004269}
+
+\leavevmode\hypertarget{ref-Sylvester2021}{}%
+Sylvester, Z. T., Long, M. C., \& Brooks, C. M. (2021). Detecting
+Climate Signals in Southern Ocean Krill Growth Habitat. \emph{Frontiers
+in Marine Science}, \emph{8}(June), 1--15.
+\url{https://doi.org/10.3389/fmars.2021.669508}
+
+\leavevmode\hypertarget{ref-Turner2004}{}%
+Turner, J. (2004). The El Niño-Southern Oscillation and Antarctica.
+\emph{International Journal of Climatology}, \emph{24}(1), 1--31.
+\url{https://doi.org/10.1002/joc.965}
+
+\leavevmode\hypertarget{ref-Turner2005}{}%
+Turner, J., Colwell, S. R., Marshall, G. J., Lachlan-Cope, T. A.,
+Carleton, A. M., Jones, P. D., Lagun, V., Reid, P. A., \& Iagovkina, S.
+(2005). Antarctic climate change during the last 50 years.
+\emph{International Journal of Climatology}, \emph{25}(3), 279--294.
+\url{https://doi.org/10.1002/joc.1130}
+
+\leavevmode\hypertarget{ref-Turner2016}{}%
+Turner, J., Lu, H., White, I., King, J. C., Phillips, T., Hosking, J.
+S., Bracegirdle, T. J., Marshall, G. J., Mulvaney, R., \& Deb, P.
+(2016). Absence of 21st century warming on Antarctic Peninsula
+consistent with natural variability. \emph{Nature}, \emph{535}(7612),
+411--415. \url{https://doi.org/10.1038/nature18645}
+
+\leavevmode\hypertarget{ref-Vorrath2020}{}%
+Vorrath, M. E., Müller, J., Rebolledo, L., Cárdenas, P., Shi, X., Esper,
+O., Opel, T., Geibert, W., Munoz, P., Haas, C., Kuhn, G., Lange, C. B.,
+Lohmann, G., \& Mollenhauer, G. (2020). Sea ice dynamics in the
+Bransfield Strait, Antarctic Peninsula, during the past 240 years: A
+multi-proxy intercomparison study. \emph{Climate of the Past},
+\emph{16}(6), 2459--2483. \url{https://doi.org/10.5194/cp-16-2459-2020}
+
+\leavevmode\hypertarget{ref-Walsh2020}{}%
+Walsh, J., Reiss, C. S., \& Watters, G. M. (2020). Flexibility in
+antarctic krill euphausia superba decouples diet and recruitment from
+overwinter sea-ice conditions in the northern antarctic peninsula.
+\emph{Marine Ecology Progress Series}, \emph{642}, 1--19.
+\url{https://doi.org/10.3354/meps13325}
+
+\leavevmode\hypertarget{ref-Yuan2004}{}%
+Yuan, X. (2004). ENSO-related impacts on Antarctic sea ice: A synthesis
+of phenomenon and mechanisms. \emph{Antarctic Science}, \emph{16}(4),
+415--425. \url{https://doi.org/10.1017/S0954102004002238}
+\end{cslreferences}
+
+
+\newpage
+\begin{figure}
+
+\vspace*{1cm}
+\includegraphics[]{images/Fig11.jpg}
+
+\end{figure}
+
+\vspace*{0.5cm}
+
+\begin{center}
+\emph{Concentración de hielo marino en la Antártida el 28 de septiembre de 2020, día en que el hielo alcanzó su máxima extensión invernal. En comparación con las condiciones medias de 1981 a 2010 (línea amarilla), el máximo más reciente estuvo ligeramente por debajo del promedio (ex. www.climate.gov)}
+
+
+\end{center}
+
+
+\end{document}
